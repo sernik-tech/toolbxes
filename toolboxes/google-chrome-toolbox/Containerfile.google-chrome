@@ -1,19 +1,16 @@
 FROM quay.io/toolbx-images/ubuntu-toolbox:22.04
-# From https://github.com/toolbx-images/images/tree/main/ubuntu/22.04
-
-LABEL com.github.containers.toolbox="true" \
-      usage="This image is meant to be used with the toolbox or distrobox command" \
-      summary="A cloud-native terminal experience powered by Ubuntu" \
-      maintainer="jorge.castro@gmail.com"
-
-COPY ./toolboxes/ubuntu-toolbox/packages.ubuntu /toolbox-packages
 
 RUN apt-get update && \ 
     apt-get upgrade -y && \
     DEBIAN_FRONTEND=noninteractive apt-get -y install \
-        $(cat toolbox-packages | xargs) && \
+    	xdg-desktop-portal-gtk \
+        libxss1 \
+        libappindicator1 \
+        libindicator7 && \
+    curl -sL -o /tmp/google-chrome-stable_current_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
+    apt-get install -y /tmp/google-chrome-stable_current_amd64.deb
+    
     rm -rd /var/lib/apt/lists/*
-
-RUN rm /toolbox-packages
+    rm -rf /tmp/*
 
 RUN echo "ALL            ALL = (ALL) NOPASSWD: ALL" >> /etc/sudoers
