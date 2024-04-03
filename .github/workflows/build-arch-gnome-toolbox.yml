@@ -1,4 +1,4 @@
-name: Build Arch Toolbox (Sernik) Image
+name: Build Arch (GNOME) Toolbox (Sernik) Image
 on:
   schedule:
     - cron: '20 22 * * *'  # 10:20pm everyday
@@ -6,7 +6,7 @@ on:
   merge_group:
   workflow_dispatch:
 env:
-    IMAGE_NAME: arch-toolbox
+    IMAGE_NAME: arch-gnome-toolbox
     IMAGE_TAGS: latest
     IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
 
@@ -52,7 +52,7 @@ jobs:
         uses: redhat-actions/buildah-build@v2
         with:
           containerfiles: |
-            ./toolboxes/arch-toolbox/Containerfile.arch
+            ./toolboxes/arch-toolbox/Containerfile.arch-gnome
           image: ${{ env.IMAGE_NAME }}
           tags: ${{ env.IMAGE_TAGS }}
           labels: ${{ steps.meta.outputs.labels }}
