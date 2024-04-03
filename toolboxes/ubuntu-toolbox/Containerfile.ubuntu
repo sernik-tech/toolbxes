@@ -4,10 +4,19 @@ FROM quay.io/toolbx-images/ubuntu-toolbox:22.04
 COPY ./toolboxes/ubuntu-toolbox/basic.ubuntu /toolbox-packages
 
 # Installs basic packages listed in the basic.ubuntu file
-RUN apt-get update && \ 
-    apt-get upgrade -y && \
+# Then installs dev related packages and others
+RUN apt-get update && apt-get upgrade -y && \
     DEBIAN_FRONTEND=noninteractive apt-get -y install \
         $(cat toolbox-packages | xargs) && \
+    wget https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
+	-O /usr/share/keyrings/vscodium-archive-keyring.asc && \
+    echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.asc ] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs vscodium main' \
+	| sudo tee /etc/apt/sources.list.d/vscodium.list && \
+    apt-get update && apt-get upgrade -y && \
+    DEBIAN_FRONTEND=noninteractive apt-get -y install \
+	codium \
+	adb \
+	fastboot && \
     rm -rd /var/lib/apt/lists/*
 
 RUN rm /toolbox-packages
