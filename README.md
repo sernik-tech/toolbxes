@@ -5,7 +5,7 @@
 
 <div align="center">
 
-[![fedora-sernik](https://github.com/sernik-tech/member-images/actions/workflows/fedora-sernik/badge.svg)](https://github.com/sernik-tech/member-images/actions/workflows/fedora-sernik.yml) [![ubuntu-sernik](https://github.com/sernik-tech/member-images/actions/workflows/ubuntu-sernik.yml/badge.svg)](https://github.com/sernik-tech/member-images/actions/workflows/ubuntu-sernik.yml) [![arch-sernik](https://github.com/sernik-tech/member-images/actions/workflows/arch-sernik.yml/badge.svg)](https://github.com/sernik-tech/member-images/actions/workflows/arch-sernik.yml) [![google-chrome](https://github.com/sernik-tech/member-images/actions/workflows/google-chrome.yml/badge.svg)](https://github.com/sernik-tech/member-images/actions/workflows/google-chrome.yml)
+[![fedora-toolbox](https://github.com/sernik-tech/member-images/actions/workflows/build-fedora-toolbox.yml/badge.svg)](https://github.com/sernik-tech/member-images/actions/workflows/build-fedora-toolbox.yml) [![ubuntu-toolbox](https://github.com/sernik-tech/member-images/actions/workflows/build-ubuntu-toolbox.yml/badge.svg)](https://github.com/sernik-tech/member-images/actions/workflows/build-ubuntu-toolbox.yml) [![arch-toolbox](https://github.com/sernik-tech/member-images/actions/workflows/arch-toolbox.yml/badge.svg)](https://github.com/sernik-tech/member-images/actions/workflows/arch-sernik.yml) [![google-chrome](https://github.com/sernik-tech/member-images/actions/workflows/build-google-chrome-toolbox.yml/badge.svg)](https://github.com/sernik-tech/member-images/actions/workflows/build-google-chrome-toolbox.yml)
 
 </div>
 
