@@ -5,7 +5,7 @@
 
 <div align="center">
 
-[![google-chrome](https://github.com/sernik-tech/member-images/actions/workflows/google-chrome.yml/badge.svg)](https://github.com/sernik-tech/member-images/actions/workflows/google-chrome.yml)
+[![fedora-sernik](https://github.com/sernik-tech/member-images/actions/workflows/fedora-sernik/badge.svg)](https://github.com/sernik-tech/member-images/actions/workflows/fedora-sernik.yml) [![ubuntu-sernik](https://github.com/sernik-tech/member-images/actions/workflows/ubuntu-sernik.yml/badge.svg)](https://github.com/sernik-tech/member-images/actions/workflows/ubuntu-sernik.yml) [![arch-sernik](https://github.com/sernik-tech/member-images/actions/workflows/arch-sernik.yml/badge.svg)](https://github.com/sernik-tech/member-images/actions/workflows/arch-sernik.yml) [![google-chrome](https://github.com/sernik-tech/member-images/actions/workflows/google-chrome.yml/badge.svg)](https://github.com/sernik-tech/member-images/actions/workflows/google-chrome.yml)
 
 </div>
 
