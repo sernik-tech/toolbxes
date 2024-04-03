@@ -65,7 +65,7 @@ jobs:
         uses: redhat-actions/buildah-build@v2
         with:
           containerfiles: |
-            ./toolboxes/google-chrome-toolbox/Containerfile.google-chrome
+            ./toolboxes/ubuntu-toolbox/Containerfile.google-chrome
           image: ${{ env.IMAGE_NAME }}
           tags: ${{ env.IMAGE_TAGS }}
           labels: ${{ steps.meta.outputs.labels }}
