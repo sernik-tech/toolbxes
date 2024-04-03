@@ -1,6 +1,6 @@
 FROM ghcr.io/ublue-os/arch-distrobox AS arch-gnome-toolbox
 
-COPY toolbxes/toolboxes/arch-toolbox/files /
+COPY toolboxes/arch-toolbox/files /
 
 # Install needed packages
 RUN pacman -S \
