@@ -3,7 +3,7 @@ FROM ghcr.io/ublue-os/arch-distrobox AS arch-gnome-toolbox
 COPY toolboxes/arch-toolbox/files /
 
 # Install needed packages
-RUN pacman -S \
+RUN pacman -Syu \
         lib32-vulkan-radeon \
         libva-mesa-driver \
         intel-media-driver \
@@ -37,7 +37,7 @@ RUN pacman -S \
         libbsd \
         noto-fonts-cjk \
         --noconfirm && \
-    pacman -S \
+    pacman -Syu \
         steam \
         lutris \
         mangohud \
@@ -56,7 +56,7 @@ RUN useradd -m --shell=/bin/bash build && usermod -L build && \
 # Install AUR packages
 USER build
 WORKDIR /home/build
-RUN paru -S \
+RUN paru -Syu \
         aur/protontricks \
         aur/vkbasalt \
         aur/lib32-vkbasalt \
