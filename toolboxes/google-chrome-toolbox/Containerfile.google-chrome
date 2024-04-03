@@ -8,9 +8,8 @@ RUN apt-get update && \
         libappindicator1 \
         libindicator7 && \
     curl -sL -o /tmp/google-chrome-stable_current_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
-    apt-get install -y /tmp/google-chrome-stable_current_amd64.deb
-    
-    rm -rd /var/lib/apt/lists/*
+    apt-get install -y /tmp/google-chrome-stable_current_amd64.deb && \
+    rm -rd /var/lib/apt/lists/* && \
     rm -rd /tmp/*
 
 RUN echo "ALL            ALL = (ALL) NOPASSWD: ALL" >> /etc/sudoers
