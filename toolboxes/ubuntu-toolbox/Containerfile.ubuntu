@@ -19,6 +19,8 @@ RUN apt-get update && apt-get upgrade -y && \
 	fastboot && \
     rm -rd /var/lib/apt/lists/*
 
+COPY ./toolboxes/ubuntu-toolbox/files /
+
 RUN rm /toolbox-packages
 
 RUN   ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/docker && \
