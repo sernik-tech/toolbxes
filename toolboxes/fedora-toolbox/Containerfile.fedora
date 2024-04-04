@@ -1,9 +1,7 @@
 FROM ghcr.io/ublue-os/fedora-distrobox:latest
 
-# Adds repository for starship prompt &
 # Install decent selection of Modern Unix utilities, then random useful utilities
-RUN dnf -y copr enable atim/starship && \
-    dnf -y upgrade && \
+RUN dnf -y upgrade && \
     dnf -y install \
 	bat \
 	duf \
@@ -14,14 +12,12 @@ RUN dnf -y copr enable atim/starship && \
 	neovim \
 	ripgrep \
 	sd \
-	starship \
 	p7zip \
 	unrar-free \
 	zoxide \
+	zsh \
 	yt-dlp && \
     dnf clean all
-
-COPY ./toolboxes/fedora-toolbox/files /
 
 RUN   ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/git && \
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/docker && \
