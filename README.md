@@ -13,7 +13,20 @@ Custom images made for use with Toolbox and Distrobox with the purpose of making
 
 ## Images
 
-- Fedora Sernik
-- Ubuntu Sernik
-- Arch Sernik
-- Google Chrome
+### Fedora Sernik
+
+Simple Fedora image that comes prepackaged with basic utilities, such as a handful of [Modern Unix](https://github.com/ibraheemdev/modern-unix) utilities, and other goodies like yt-dlp. For general usage.
+
+### Ubuntu Sernik
+
+Ubuntu image that comes with VSCodium, ADB (Android debugging bridge) and other related development and debugging tools. For general usage, but by default more towards development related purposes.
+
+### Arch Sernik
+
+Arch image based off of [bazzite-arch](https://github.com/ublue-os/bazzite-arch) with minor changes. Come with Steam, Lutris and other gaming related utilities. For general usage, but by default more towards gaming.
+
+##### The minor change in question: We don't package OBS Studio (obs-vkcapture-git) unlike bazzite as well as removing a few changes that limit Bazzite-arch to be an image *only* suitable for gaming.
+
+### Google Chrome
+
+A probably useless Ubuntu image with the attempt to have a minimal container with nothing but Google Chrome preinstalled. For people who need to use it but prefer not have it installed onto their actual system (as an alternative to Flatpak as well).
