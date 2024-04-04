@@ -1,13 +1,10 @@
 FROM ghcr.io/ublue-os/fedora-distrobox:latest
 
-# Adds repository for starship
-RUN dnf -y upgrade && \
-    dnf -y install \
-	dnf-plugins-core
-    dnf -y copr enable atim/starship
-
+# Adds repository for starship prompt &
 # Install decent selection of Modern Unix utilities, then random useful utilities
-RUN dnf -y install \
+RUN dnf -y copr enable atim/starship && \
+    dnf -y upgrade && \
+    dnf -y install \
 	bat \
 	duf \
 	fd-find \
