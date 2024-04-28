@@ -5,7 +5,7 @@
 
 <div align="center">
 
-[![fedora-toolbox](https://github.com/sernik-tech/toolbxes/actions/workflows/build-fedora-toolbox.yml/badge.svg)](https://github.com/sernik-tech/toolbxes/actions/workflows/build-fedora-toolbox.yml) [![ubuntu-toolbox](https://github.com/sernik-tech/toolbxes/actions/workflows/build-ubuntu-toolbox.yml/badge.svg)](https://github.com/sernik-tech/toolbxes/actions/workflows/build-ubuntu-toolbox.yml) [![arch-toolbox](https://github.com/sernik-tech/toolbxes/actions/workflows/build-arch-toolbox.yml/badge.svg)](https://github.com/sernik-tech/toolbxes/actions/workflows/build-arch-sernik.yml) [![google-chrome](https://github.com/sernik-tech/toolbxes/actions/workflows/build-google-chrome-toolbox.yml/badge.svg)](https://github.com/sernik-tech/toolbxes/actions/workflows/build-google-chrome-toolbox.yml)
+[![fedora-toolbox](https://github.com/sernik-tech/toolbxes/actions/workflows/build-fedora-toolbox.yml/badge.svg)](https://github.com/sernik-tech/toolbxes/actions/workflows/build-fedora-toolbox.yml) [![ubuntu-toolbox](https://github.com/sernik-tech/toolbxes/actions/workflows/build-ubuntu-toolbox.yml/badge.svg)](https://github.com/sernik-tech/toolbxes/actions/workflows/build-ubuntu-toolbox.yml) [![arch-toolbox](https://github.com/sernik-tech/toolbxes/actions/workflows/build-arch-toolbox.yml/badge.svg)](https://github.com/sernik-tech/toolbxes/actions/workflows/build-arch-sernik.yml)
 
 </div>
 
@@ -24,7 +24,3 @@ Ubuntu image that comes with VSCodium, ADB and a few other utilities. Grab it wi
 ### Arch Sernik
 
 Arch image based off of [bazzite-arch](https://github.com/ublue-os/bazzite-arch) with minor changes to make it a more generalized suitable image. Come with Steam and other gaming related utilities. Grab it with `ghcr.io/sernik-tech/arch-toolbox`.
-
-### Google Chrome
-
-A probably useless Ubuntu image with the attempt to have a minimal container with nothing but Google Chrome preinstalled. For people who need to use it but prefer not have it installed onto their actual system (as an alternative to Flatpak as well).
