@@ -1,3 +1,5 @@
+# Archived. Please use [toolboxes](https://github.com/ublue-os/toolboxes), [arch-distrobox](https://github.com/ublue-os/arch-distrobox) and [bazzite-arch](https://github.com/ublue-os/bazzite-arch) instead.
+
 <div align="center">
     <h1>Toolb<sub>o</sub>xes</h1>
     <h3>Toolbox/Distrobox images made by Sernik members</h3>
