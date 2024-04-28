@@ -1,8 +1,11 @@
 FROM ghcr.io/ublue-os/arch-distrobox AS arch-gnome-toolbox
+# Based on bazzite-arch with minor modifications
+# GNOME edition
 
 COPY toolboxes/arch-toolbox/files /
 
-# Install gaming related packages
+# Install gaming related packages and other desktop utilities
+# Steam seperated to prevent it from installing its own dependecies
 RUN pacman -Syu \
         lib32-vulkan-radeon \
         libva-mesa-driver \
@@ -36,7 +39,6 @@ RUN pacman -Syu \
         --noconfirm && \
     pacman -Syu \
         steam \
-        lutris \
         mangohud \
         lib32-mangohud \
         --noconfirm && \
