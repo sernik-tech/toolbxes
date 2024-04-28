@@ -23,4 +23,4 @@ Ubuntu image that comes with VSCodium, ADB and a few other utilities. Grab it wi
 
 ### Arch Sernik
 
-Arch image based off of [bazzite-arch](https://github.com/ublue-os/bazzite-arch) with minor changes to make it a more generalized suitable image. Come with Steam and other gaming related utilities. Grab it with `ghcr.io/sernik-tech/arch-toolbox` (Or `ghcr.io/sernik-tech/arch-gnome-toolbox` for GNOME users).
+No longer available. We recommend using [arch-distrobox](https://github.com/ublue-os/arch-distrobox) for an Arch based distrobox image and [bazzite-arch](https://github.com/ublue-os/bazzite-arch) for easy gaming.
