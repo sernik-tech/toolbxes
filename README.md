@@ -9,23 +9,21 @@
 
 </div>
 
-Custom images made for use with Toolbox and Distrobox with the purpose of making for one to just pull and have all of the tools they need. Based off of the work of [Universal Blue](https://github.com/ublue-os/toolboxes).
+Custom images made for use with Toolbox and Distrobox with the purpose of making for one to just pull and have all of the tools they need. Based off of the work of [Universal Blue's toolboxes](https://github.com/ublue-os/toolboxes).
 
 ## Images
 
 ### Fedora Sernik
 
-Simple Fedora image that comes prepackaged with basic utilities, such as a handful of [Modern Unix](https://github.com/johnalanwoods/maintained-modern-unix) utilities, and other goodies like yt-dlp. For general usage.
+Minimal Fedora image. Comes with a few utilities, but nothing special. Grab it with `ghcr.io/sernik-tech/fedora-toolbox`.
 
 ### Ubuntu Sernik
 
-Ubuntu image that comes with VSCodium, ADB (Android debugging bridge) and other related development and debugging tools. For general usage, but by default more towards development related purposes.
+Ubuntu image that comes with VSCodium, ADB and a few other utilities. Grab it with `ghcr.io/sernik-tech/ubuntu-toolbox`.
 
 ### Arch Sernik
 
-Arch image based off of [bazzite-arch](https://github.com/ublue-os/bazzite-arch) with minor changes. Come with Steam, Lutris and other gaming related utilities. For general usage, but by default more towards gaming.
-
-##### The minor changes in question: We don't package OBS Studio (obs-vkcapture-git) unlike bazzite as well as removing a few changes that limit Bazzite-arch to be an image *only* suitable for gaming.
+Arch image based off of [bazzite-arch](https://github.com/ublue-os/bazzite-arch) with minor changes to make it a more generalized suitable image. Come with Steam and other gaming related utilities. Grab it with `ghcr.io/sernik-tech/arch-toolbox`.
 
 ### Google Chrome
 
